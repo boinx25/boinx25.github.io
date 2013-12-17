@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Boinx's Blog]]></title>
+  <link href="http://boinx25.github.io/atom.xml" rel="self"/>
+  <link href="http://boinx25.github.io/"/>
+  <updated>2013-12-17T14:46:09+08:00</updated>
+  <id>http://boinx25.github.io/</id>
+  <author>
+    <name><![CDATA[Boinx Bantug]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Blog]]></title>
+    <link href="http://boinx25.github.io/blog/2013/12/17/first-blog/"/>
+    <updated>2013-12-17T14:15:48+08:00</updated>
+    <id>http://boinx25.github.io/blog/2013/12/17/first-blog</id>
+    <content type="html"><![CDATA[<p><body></p>
+
+<h1>Leap of Faith</h1>
+
+
+<p>Hi, I am Tony Bantug but you can call me &#8220;Boinx&#8221;. I am currently a 4th year college student taking up BSIT at College of the Immaculate Conception. I am having my Intership at a company called &#8220;Favorite Medium&#8221;. By the time this opportunity was offered to us, I had second thoughts on grabbing it because I thought that this was not my field, doing websites because I am not artistic enough and creative enough. But then my eagerness to learn more and my willingness to get out of my comfort zone pushed me to grab this rare opportunity. So I took it. I have no regrets since then, I&#8217;ve learned a lot that I didn&#8217;t learn from school. Learned and currently learning new Programming Languages. I&#8217;ll do my best to contribute to this company and not to waste this wonderful opportunity given to me.</p>
+
+
+<p></body></p>
+]]></content>
+  </entry>
+  
+</feed>
