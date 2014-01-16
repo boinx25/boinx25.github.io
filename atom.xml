@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2014-01-15T09:59:55+08:00</updated>
+  <updated>2014-01-16T10:26:23+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bootstrap]]></title>
+    <link href="http://boinx25.github.io/blog/2014/01/16/bootstrap/"/>
+    <updated>2014-01-16T09:45:55+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/01/16/bootstrap</id>
+    <content type="html"><![CDATA[<p>Bootstrap is FUN! It is a great front-end framework that enables your site to be responsive. It means that whatever gadget you use in accessing your site it will automatically adjust to the dimension of the screen of your gadget so it is more presentable unlike loading the same web version of your site. It offers you pre-made buttons, forms, dropdowns, slider/carousel, anything that you will need in designing your website. You can use it for free, you just need to download it and include it on your html file.</p>
+
+
+
+
+<h1>Here is an example of a site that&#8217;s made with Bootstrap</h1>
+
+
+<p>Web Version:</p>
+
+
+<p><img src="http://boinx25.github.io/images/ExampleBootstrap" width="800" height="500" title="image" alt="images"></p>
+
+<p>Mobile Version:</p>
+
+
+<p><img src="http://boinx25.github.io/images/ExampleMobile.png" title="image" alt="images"></p>
+
+<p>On the example above you can see that the site is responsive. Because of Bootstrap we didn&#8217;t have to create another project so that our site will be mobile ready. We&#8217;ve just used the same code from our web version and added Bootstrap then BOOM, it&#8217;s done.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New Things!]]></title>
