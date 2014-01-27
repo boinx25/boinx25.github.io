@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2014-01-27T13:55:36+08:00</updated>
+  <updated>2014-01-27T14:06:55+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -58,6 +58,9 @@ echo $name;
 <p>In calling the variables we&#8217;ve declared we should not also forget the &#8216;$&#8217;.</p>
 
 
+
+
+<!-- more -->
 
 
 <h2>Arrays</h2>
