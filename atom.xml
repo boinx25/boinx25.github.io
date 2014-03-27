@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2014-02-07T10:27:44+08:00</updated>
+  <updated>2014-03-27T18:18:36+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sample]]></title>
+    <link href="http://boinx25.github.io/blog/2014/03/27/sample/"/>
+    <updated>2014-03-27T18:17:12+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/03/27/sample</id>
+    <content type="html"><![CDATA[<h1>Sample</h1>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Drupal]]></title>
