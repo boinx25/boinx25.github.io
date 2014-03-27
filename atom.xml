@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2014-03-27T18:18:36+08:00</updated>
+  <updated>2014-03-27T18:38:09+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -19,16 +19,6 @@
     <updated>2014-03-27T18:17:12+08:00</updated>
     <id>http://boinx25.github.io/blog/2014/03/27/sample</id>
     <content type="html"><![CDATA[<h1>Sample</h1>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Drupal]]></title>
-    <link href="http://boinx25.github.io/blog/2014/02/07/drupal/"/>
-    <updated>2014-02-07T10:23:26+08:00</updated>
-    <id>http://boinx25.github.io/blog/2014/02/07/drupal</id>
-    <content type="html"><![CDATA[<p>I&#8217;m currently learning how to edit and customize a drupal theme. I&#8217;ll post screenshots of my first drupal theme as soon as I finish it.</p>
 
 ]]></content>
   </entry>
