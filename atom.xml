@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2014-03-27T18:38:09+08:00</updated>
+  <updated>2014-04-09T09:53:16+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -14,11 +14,88 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Sample]]></title>
-    <link href="http://boinx25.github.io/blog/2014/03/27/sample/"/>
-    <updated>2014-03-27T18:17:12+08:00</updated>
-    <id>http://boinx25.github.io/blog/2014/03/27/sample</id>
-    <content type="html"><![CDATA[<h1>Sample</h1>
+    <title type="html"><![CDATA[Bootstrap: Grid System]]></title>
+    <link href="http://boinx25.github.io/blog/2014/04/09/bootstrap-grid-system/"/>
+    <updated>2014-04-09T08:36:51+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/04/09/bootstrap-grid-system</id>
+    <content type="html"><![CDATA[<p>Recently, I studied how  the Bootstrap Grid System works. Bootstrap is a framework that helps you to create a responsive website with ease. The Grid System of Bootstrap is the one who takes care of positioning the elements of your website whether it is on mobile view, tablet view or web view. So now I&#8217;ll explain to you how it works. </p>
+
+
+
+
+<h1>Code:</h1>
+
+
+<p><img src="http://boinx25.github.io/images/CodeWithContainer.png" width="700" height="500" title="image" alt="images"></p>
+
+<h1>Output:Web View</h1>
+
+
+<p><img src="http://boinx25.github.io/images/BootstrapGridFullView.png" width="700" height="500" title="image" alt="images"></p>
+
+<h1>Output:Mobile View</h1>
+
+
+<p><img src="http://boinx25.github.io/images/BootstrapMobileView.png" width="400" height="200" title="image" alt="images"></p>
+
+<p>This is my sample of the Bootstrap Grid System. As you can see from the code I&#8217;ve wrapped them in a class named &#8220;container&#8221;. Container is a special class from bootstrap which position the elements at the center of the page. It has a fixed with and margin. However, it is not required to use the class &#8220;container&#8221; to make it responsive, you can use your own made containers.</p>
+
+
+
+
+<p>The class &#8220;row&#8221; tells that all the elements under it is on one row. But if the maximum column is reached which is 12 the next element will automatically be on the next row.</p>
+
+
+
+
+<p>The Grid system is composed of 12 columns. To be able to position the elements well there is a class from Bootstrap that you can use it is the &#8220;col-(screenSize)-(columnSize)&#8221; class. You can use it in four different screenSizes:</p>
+
+
+
+
+<p>Extra Small -> xs = the screensize is less than 768px
+<br />
+Small -> sm = the screensize is greater than and equal to 768px
+<br />
+Medium -> md = the screensize is greater than and equal to 992px
+<br />
+Large -> lg = the screensize is greater than and equal to 1200px
+
+<br>
+<br>
+
+The column size can be chosen from 1-12 depending on how you want it to be positioned on the page. If you use any numbers aside from this it will not work.
+</p>
+
+
+
+
+<p>On my example, I&#8217;ve used &#8220;col-xs-4 and col-lg-12&#8221; as classes for my yellow divs and &#8220;col-xs-12 and col-lg-4&#8221; for my purple divs. &#8220;col-xs-4&#8221; means that when the screen size becomes less than 768px the elements applied with this class will occupy 4 columns. Look at the picture of Mobile View and you will see that my yellow divs are now inline and divided into 3. &#8220;col-lg-12&#8221; means that when the screen size is greater than or equal to 1200px the elements applied with this class will occupy 12 columns or 1 whole row. You can see at the Web View that my yellow divs are now not inline and now is stacked up. The same mechanics is applied to my purple divs.</p>
+
+
+
+
+<!-- more -->
+
+
+
+
+<h1>Code:(without using the class &#8220;container&#8221;</h1>
+
+
+<p><img src="http://boinx25.github.io/images/CodeWOContainer.png" width="700" height="500" title="image" alt="images"></p>
+
+<h1>Web View (without the class &#8220;container&#8221;)</h1>
+
+
+<p><img src="http://boinx25.github.io/images/WebViewWOContainer.png" width="700" height="500" title="image" alt="images"></p>
+
+<h1>Mobile View (without the class &#8220;container&#8221;)</h1>
+
+
+<p><img src="http://boinx25.github.io/images/MobileViewWOContainer.png" width="400" height="200" title="image" alt="images"></p>
+
+<p>When you don&#8217;t use the Container class of Bootstrap. The &#8220;row&#8221; class will have occupy the full width of the page. That&#8217;s the only difference.</p>
 
 ]]></content>
   </entry>
