@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2014-04-09T09:53:16+08:00</updated>
+  <updated>2014-04-10T20:18:27+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Resizer]]></title>
+    <link href="http://boinx25.github.io/blog/2014/04/10/resizer/"/>
+    <updated>2014-04-10T20:07:00+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/04/10/resizer</id>
+    <content type="html"><![CDATA[<p>So upon searching for tutorials for Bootstrap on youtube. I bumped into a video that introduce me to a interesting tool that can be used in making a responsive website. It is a tool that emulates different screensizes.</p>
+
+
+
+
+<p>Here&#8217;s the website of the tool I&#8217;m telling you about:</p>
+
+
+<p><img src="http://boinx25.github.io/images/HomepageVR.png" width="700" height="500" title="image" alt="images"></p>
+
+<p>Just drag the blue button in to your bookmark bar and it will be ready to use.</p>
+
+
+
+
+<p>Usage:</p>
+
+
+<p><img src="http://boinx25.github.io/images/Mobile1st.png" width="700" height="500" title="image" alt="images"></p>
+
+<p><img src="http://boinx25.github.io/images/Mobile2nd.png" width="700" height="500" title="image" alt="images"></p>
+
+<p><img src="http://boinx25.github.io/images/TabletView.png" width="700" height="500" title="image" alt="images"></p>
+
+<p><img src="http://boinx25.github.io/images/LargerTablet.png" width="700" height="500" title="image" alt="images"></p>
+
+<p><img src="http://boinx25.github.io/images/Widescreen.png" width="700" height="500" title="image" alt="images"></p>
+
+<p><img src="http://boinx25.github.io/images/HDTV.png" width="700" height="500" title="image" alt="images"></p>
+
+<p>So there you have it. I recommend you give it a try especially when you&#8217;re making a responsive website. It is a great tool and a big help for web developers because they can see how the website looks even if they don&#8217;t resize the browser on different screensizes or access it on a sample phone.</p>
+
+
+
+
+<p>So there you have it I just want to share this brilliant tool. Thanks for Reading!</p>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bootstrap: Grid System]]></title>
