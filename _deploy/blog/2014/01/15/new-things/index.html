@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>New Things! - Boinx's Blog</title>
+  <meta name="author" content="Boinx Bantug">
+
+  
+  <meta name="description" content="Compass and SASS Recently, I learned how to use Compass and SASS. It is a great help for all the web developers out there. It gives them ease on &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://boinx25.github.io/blog/2014/01/15/new-things">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Boinx's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Boinx's Blog</a></h1>
+  
+    <h2>Stepping stone</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:boinx25.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">New Things!</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-15T09:12:30+08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><body></p>
+
+<h1>Compass and SASS</h1>
+
+
+<p>Recently, I learned how to use Compass and SASS. It is a great help for all the web developers out there. It gives them ease on doing or editing the CSS of their projects. It allows you to create mixins, makes it easy creating sprites, generates your CSS file fast, allows you to import css file to another css file so you&#8217;ll just have to link 1 CSS file to your project. For a beginner like me, yes it benefits me a lot.</p>
+
+
+
+
+<p>Compass is an open source application that uses SASS(Syntactically Awesome Style Sheets). SASS is an extension of CSS3 that allows you to nest rules, add variables, create mixins and etc. It is also the one who generates your CSS.</p>
+
+
+
+
+<p>Examples of SASS Commands:</p>
+
+
+<h2>Nested Rules</h2>
+
+
+<pre><code>#content{
+    background-color:black;
+
+    .box{
+        background-color:black;
+    }   
+
+}
+</code></pre>
+
+<p> When compiled to CSS, it will look like this:</p>
+
+
+<pre><code>#content{
+background-color:black;
+}
+#content .box{
+background-color:black;
+}
+</code></pre>
+
+<h2>Variables</h2>
+
+
+<pre><code>$black = #00000;
+$w = white; 
+</code></pre>
+
+<p><p>Now you can use these variables anywhere on your project just don&rsquo;t forget to import it to the CSS file where you need to use it. You can simply type, <strong>@import &lsquo;name of the scss file&rsquo;;</strong>. You can use the variables like this:</p>
+
+<pre><code>background-color:$black;
+color:$w;
+</code></pre>
+
+<p><h2>Mixins</h2></p>
+
+<pre><code>@mixin myFont{
+font:{
+    family:Arial;
+    size:15px;
+    weight:bold;
+}
+}
+</code></pre>
+
+<p><p>You can use it by using the <strong>@include</strong> method.</p></p>
+
+<pre><code>#pageHead{
+width:500px;
+text-align:center;
+@include myFont;
+}
+</code></pre>
+
+<p><p>That&rsquo;s all for now. I&rsquo;ll update this blog again as soon as I learned something new! Thanks for reading! :)</p>
+</body></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Boinx Bantug</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-15T09:12:30+08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://boinx25.github.io/blog/2014/01/15/new-things/" data-via="" data-counturl="http://boinx25.github.io/blog/2014/01/15/new-things/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/06/second-post/" title="Previous Post: Fresh from Vacation">&laquo; Fresh from Vacation</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/01/16/bootstrap/" title="Next Post: Bootstrap">Bootstrap &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/25/bootstrap-image-responsive-class/">Bootstrap:Image Responsive Class</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/10/resizer/">Resizer</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/09/bootstrap-grid-system/">Bootstrap: Grid System</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/27/php/">PHP: Hypertext Processor</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/16/bootstrap/">Bootstrap</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Boinx Bantug -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
