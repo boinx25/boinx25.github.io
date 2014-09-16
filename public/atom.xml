@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Boinx's Blog]]></title>
+  <link href="http://boinx25.github.io/atom.xml" rel="self"/>
+  <link href="http://boinx25.github.io/"/>
+  <updated>2014-09-12T11:23:46+08:00</updated>
+  <id>http://boinx25.github.io/</id>
+  <author>
+    <name><![CDATA[Boinx Bantug]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Chrome Extension]]></title>
+    <link href="http://boinx25.github.io/blog/2014/09/12/chrome-extension/"/>
+    <updated>2014-09-12T10:30:18+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/09/12/chrome-extension</id>
+    <content type="html"><![CDATA[<p>Last monday, Sir Efren asked us to try and create a simple Google Chrome extension. I was assigned to do the Stock Quote Extension. I will show you how I built my own Extension.</p>
+
+
+<br />
+
+
+
+
+<h2>This is the project directory of my extension:</h2>
+
+
+<p><img src="http://boinx25.github.io/images/Directory.png" width="300" height="300" title="image" alt="images"></p>
+
+<br />
+
+
+<h2>First:Created my manifest.json file.</h2>
+
+
+<p><img src="http://boinx25.github.io/images/manifest.png" width="800" height="500" title="image" alt="images"></p>
+
+<p>Your manifest file contains the details about your extension.</p>
+
+
+<ul>
+<li><p>Manifest Version - declares what version your manifest should be. It&#8217;s currently should be set to 2 because 1 is already deprecated and the support for it is already phased out.</p></li>
+<li><p>Name - this will be the name of your extension. This is what will the users see when they download or use when they search your extension.</p></li>
+<li><p>Description - description for your extension. This is to explain to the users what your extension do.</p></li>
+<li><p>Permissions - usually used to connect APIs to your extension. It is to permit the connection of your extension to the external API.</p></li>
+<li><p>Browser Action - this is where you put what behavior will your extension do when clicked.</p></li>
+        <ul>
+            <li><p>Default icon - this will be the icon of your extension.</p></li>
+            <li><p>Default popup - once the icon of your extension was clicked this will show up.</p></li>
+        </ul>
+<li><p>Content Scripts - this is where you declare external scripts, external css, etc.</p></li>
+        <ul>
+            <li><p>Matches - this specifies the pages where your script will be injected.</p></li>
+            <li><p>scripts - this is where you specify the external script files that will be used. So that the extensions will run your script once it was clicked. Inline scripts are not accepted by the extension. You still have to include your scripts in the head tag of your html file.</p>
+        </ul>
+</ul>
+
+
+
+
+<br />
+
+
+
+
+<h2>Second:Created my html file</h2>
+
+
+<p><img src="http://boinx25.github.io/images/popup.png" width="800" height="500" title="image" alt="images"></p>
+
+<h2>Third:Created my js file</h2>
+
+
+<p><img src="http://boinx25.github.io/images/popupjs.png" width="800" height="500" title="image" alt="images"></p>
+
+<p>I created my own js file so that I can gather data from Yahoo&#8217;s Stocks API then it will be printed to the table on the extension&#8217;s popup.</p>
+
+
+
+
+<br />
+
+
+
+
+<h2>My extension when installed</h2>
+
+
+<p><img src="http://boinx25.github.io/images/ExtensionToolbar.png" width="300" height="300" title="image" alt="images"></p>
+
+<p>My extension is the one next to the PS Logo.</p>
+
+
+
+
+<br />
+
+
+
+
+<h2>My extension when clicked</h2>
+
+
+<p><img src="http://boinx25.github.io/images/ExtensionWorking.png" width="500" height="500" title="image" alt="images"></p>
+
+<p>Everytime the user clicks my extension it will return updated results from Yahoo&#8217;s Stocks API.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Drupal]]></title>
+    <link href="http://boinx25.github.io/blog/2014/02/07/drupal/"/>
+    <updated>2014-02-07T10:23:26+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/02/07/drupal</id>
+    <content type="html"><![CDATA[<p>I&#8217;m currently learning how to edit and customize a drupal theme. I&#8217;ll post screenshots of my first drupal theme as soon as I finish it.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP: Hypertext Processor]]></title>
+    <link href="http://boinx25.github.io/blog/2014/01/27/php/"/>
+    <updated>2014-01-27T11:10:24+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/01/27/php</id>
+    <content type="html"><![CDATA[<p>I recently broadened my knowledge about PHP. I took the course PHP at codeacademy and I&#8217;m here to share some of the things I&#8217;ve learned.</p>
+
+
+
+
+<h3>PHP codes should be under this tag:</h3>
+
+
+<pre><code>&lt;?php
+    you input your PHP code here....
+?&gt;
+</code></pre>
+
+<h3>Declaring Variables</h3>
+
+
+<pre><code>$num1 = 1;
+$num2 = 2;
+$num3 = 3;
+$true = true;
+$name = "Boinx";
+</code></pre>
+
+<p>In declaring variables, we must not forget the &#8216;$&#8217; or else our variable will be invalid and we&#8217;ll receive an error message.</p>
+
+
+
+
+<h3>Using the variables we&#8217;ve declared</h3>
+
+
+<pre><code>echo $num1;
+echo $num2;
+echo $num3;
+echo $name;
+</code></pre>
+
+<p>In calling the variables we&#8217;ve declared we should not also forget the &#8216;$&#8217;.</p>
+
+
+
+
+<!-- more -->
+
+
+<h2>Arrays</h2>
+
+
+<h3>Standard Array</h3>
+
+
+<pre><code>$myArray = array('2013','Hyperdunk','BHM');
+echo "I have a". " " . $myArray[0] . " " . $myArray[1] . " " . $myArray[2];
+</code></pre>
+
+<p>This is how you make an array in PHP and how you use the values inside the array. The output of this is &#8220;I have a 2013 Hyperdunk BHM&#8221;</p>
+
+
+
+
+<h3>Associative Array</h3>
+
+
+<pre><code>$myArray = array('year' =&gt; 2013,'model' =&gt; 'Hyperdunk','colorway' =&gt; 'BHM');
+
+echo "I have a" . " " . myArray['year'] . " " . myArray['model'] . " " . myArray['colorway'];
+</code></pre>
+
+<p>or</p>
+
+
+<pre><code>$myArray = array('year' =&gt; 2013, 
+                'model' =&gt; 'Hyperdunk',
+                 'colorway' =&gt; 'BHM');
+
+echo "I have a" . " " . myArray['year'] . " " . myArray['model'] . " " . myArray['colorway'];
+</code></pre>
+
+<p>You can write the code however you want it to be written as long as you follow the format (&#8216;name&#8217; => &#8216;value&#8217;).</p>
+
+
+<p>Associative Arrays are more specific because you give names on the values of your arrays. Therefore it will be a lot easier to locate what index you&#8217;ll need to look for when you need a certain value.</p>
+
+
+<p>The output of this is as same as the output of the Standard Array. &#8220;I have a 2013 Hyperdunk BHM.&#8221;</p>
+
+
+
+
+<h3>Objects</h3>
+
+
+<pre><code>Class Friend{
+    public $isAlive = true;
+}
+
+$friend1 = new Friend();
+$friend1=&gt;isAlive();
+</code></pre>
+
+<p>This is how we declare objects in PHP. $isAlive is a property of the Object friend, it is set to &#8216;public&#8217; so that you can access it anywhere in the program. To create an instance of your Object:&#8221;$friend1 = new Friend();&#8221;. $friend1=>isAlive(); we are checking if our instance contains a propery name isAlive. As you can see we use &#8220;=>&#8221; instead of &#8220;.&#8221; because PHP does not use dot notation instead it uses the arrow notation.</p>
+
+
+
+
+<h3>Premade Functions of PHP</h3>
+
+
+<pre><code>//String Functions
+$myName = "Boinx";
+strlen($myName);
+substr($myName,0,4);
+strtoupper($myName);
+strtolower($myName);
+strpos($myName,"o");
+
+//Math Functions
+round(MATH_PI);
+round(MATH_PI,4);
+floor(MATH_PI);
+ceil(MATH_PI);
+
+//Array Functions
+$myArray = array();
+array_push($myArray,'Boinx');
+array_push($myArray,'LeBron');
+array_push($myArray,"Durant");
+count($myArray);
+sort($myArray);
+rsort($myArray);
+</code></pre>
+
+<p><strong>String Functions</strong>
+<br><strong>strlen()</strong> is a function that returns the length of a string. strlen($myName) returns 5.
+<br><br><strong>substr()</strong> is a function that returns the value of the index of the string given. The arguments are: substr(string,index where it will start, index where will it end). So the value of substr($myName,0,4) is Boin.
+<br><br><strong>strtoupper()</strong> is a function that converts the string to uppercase. strtoupper(string) is the correct format. The value of strtoupper($myName) is BOINX.
+<br><br><strong>strtolower()</strong> is a function that converts the string to lowercase. strtolower(string) is the correct format. The value of strtolower($myName) is boinx.
+<br><br><strong>strpos</strong> is a function that returns the index of a letter that is on a string. strpos(string,character to find) is the correct format. strpos($myName,&#8221;o&#8221;) returns 1;
+</p>
+
+
+
+
+<p><strong>Math Functions</strong>
+<br>(M_PI) is equals to 3.1416.
+<br><br><strong>round()</strong> is a Math function that rounds off a decimal number. round(floatingnumber,number of decimal places) is the correct format. round(M_PI) returns 3 while round(M_PI,4) returns 3.1416. 
+<br><br><strong>floor()</strong> is a Math function that forcefully rounds down the decimal number. floor(M_PI) returns 3.
+<br><br><strong>ceil()</strong> is a Math function that forcefully rounds up the decimal number. ceil(M_PI) returns 4.
+</p>
+
+
+
+
+<p><strong>Array Functions</strong>
+<br><strong>array_push</strong> is a function that pushes a value to an array. array_push(arrayName,valueTobePushed) is the correct format. array_push($myArray,&#8217;Boinx&#8217;) pushes &#8216;Boinx&#8217; to the array  so the array now have its first value.
+<br><br><strong>count()</strong> is a function that counts the length of an array. count(arrayName) is the correct format. count($myArray) returns 3.
+<br><br><strong>sort()</strong> is a function that alphabetically sorts the values inside the array. sort(arrayName) is the correct format. sort($myArray) sorts the array to [&#8220;Boinx&#8221;,&#8221;Durant&#8221;,&#8221;LeBron&#8221;].
+<br><br><strong>rsort()</strong> is a function that sorts the values inside the array in descending order. rsort(arrayName) is the correct format. rsort($myArray) sorts the array to [&#8220;LeBron&#8221;,&#8221;Durant&#8221;,&#8221;Boinx&#8221;].
+</p>
+
+
+
+
+<h3>Defining our Own Functions</h3>
+
+
+<pre><code>function HelloWorld(){
+    echo "Hello World";
+}
+
+HelloWorld();
+
+
+
+//with argument
+
+function hello($name){
+    echo "Hello". " " . $name;
+}
+
+hello('Boinx');
+</code></pre>
+
+<p>This is how we define our own function in PHP. The format is:</p>
+
+
+<br>
+
+
+<pre><code>function functionName(argument){
+
+    something to do.........
+}
+</code></pre>
+
+<p>HelloWorld() is how we call our function that doesn&#8217;t require you to pass an argument. hello(&#8216;Boinx&#8217;) is an example on how to call your function when it requires you to send an argument.</p>
+
+
+
+
+<h2>That&#8217;s all for today! I&#8217;ll update this blog again as soon as I learned something new. Thanks for reading! :)</h2>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bootstrap]]></title>
+    <link href="http://boinx25.github.io/blog/2014/01/16/bootstrap/"/>
+    <updated>2014-01-16T09:45:55+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/01/16/bootstrap</id>
+    <content type="html"><![CDATA[<p>Bootstrap is FUN! It is a great front-end framework that enables your site to be responsive. It means that whatever gadget you use in accessing your site it will automatically adjust to the dimension of the screen of your gadget so it is more presentable unlike loading the same web version of your site. It offers you pre-made buttons, forms, dropdowns, slider/carousel, anything that you will need in designing your website. You can use it for free, you just need to download it and include it on your html file.</p>
+
+
+
+
+<h1>Here is an example of a site that&#8217;s made with Bootstrap</h1>
+
+
+<p>Web Version:</p>
+
+
+<p><img src="http://boinx25.github.io/images/ExampleBootstrap" width="800" height="500" title="image" alt="images"></p>
+
+<p>Mobile Version:</p>
+
+
+<p><img src="http://boinx25.github.io/images/ExampleMobile.png" title="image" alt="images"></p>
+
+<p>On the example above you can see that the site is responsive. Because of Bootstrap we didn&#8217;t have to create another project so that our site will be mobile ready. We&#8217;ve just used the same code from our web version and added Bootstrap then BOOM, it&#8217;s done.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Things!]]></title>
+    <link href="http://boinx25.github.io/blog/2014/01/15/new-things/"/>
+    <updated>2014-01-15T09:12:30+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/01/15/new-things</id>
+    <content type="html"><![CDATA[<p><body></p>
+
+<h1>Compass and SASS</h1>
+
+
+<p>Recently, I learned how to use Compass and SASS. It is a great help for all the web developers out there. It gives them ease on doing or editing the CSS of their projects. It allows you to create mixins, makes it easy creating sprites, generates your CSS file fast, allows you to import css file to another css file so you&#8217;ll just have to link 1 CSS file to your project. For a beginner like me, yes it benefits me a lot.</p>
+
+
+
+
+<p>Compass is an open source application that uses SASS(Syntactically Awesome Style Sheets). SASS is an extension of CSS3 that allows you to nest rules, add variables, create mixins and etc. It is also the one who generates your CSS.</p>
+
+
+
+
+<p>Examples of SASS Commands:</p>
+
+
+<h2>Nested Rules</h2>
+
+
+<pre><code>#content{
+    background-color:black;
+
+    .box{
+        background-color:black;
+    }   
+
+}
+</code></pre>
+
+<p> When compiled to CSS, it will look like this:</p>
+
+
+<pre><code>#content{
+background-color:black;
+}
+#content .box{
+background-color:black;
+}
+</code></pre>
+
+<h2>Variables</h2>
+
+
+<pre><code>$black = #00000;
+$w = white; 
+</code></pre>
+
+<p><p>Now you can use these variables anywhere on your project just don&rsquo;t forget to import it to the CSS file where you need to use it. You can simply type, <strong>@import &lsquo;name of the scss file&rsquo;;</strong>. You can use the variables like this:</p>
+
+<pre><code>background-color:$black;
+color:$w;
+</code></pre>
+
+<p><h2>Mixins</h2></p>
+
+<pre><code>@mixin myFont{
+font:{
+    family:Arial;
+    size:15px;
+    weight:bold;
+}
+}
+</code></pre>
+
+<p><p>You can use it by using the <strong>@include</strong> method.</p></p>
+
+<pre><code>#pageHead{
+width:500px;
+text-align:center;
+@include myFont;
+}
+</code></pre>
+
+<p><p>That&rsquo;s all for now. I&rsquo;ll update this blog again as soon as I learned something new! Thanks for reading! :)</p>
+</body></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fresh From Vacation]]></title>
+    <link href="http://boinx25.github.io/blog/2014/01/06/second-post/"/>
+    <updated>2014-01-06T13:14:25+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/01/06/second-post</id>
+    <content type="html"><![CDATA[<p><body></p>
+
+<h1>Python and Javascript</h1>
+
+
+<p>
+Python and Javascript are the two programming languages that I&#8217;ve learned during the Christmas Vacation. For me, Python is more confusing than Javascript because you don&#8217;t end your statements with semicolon and it doesn&#8217;t need to have curly braces in making functions and if/else statements. It relies on white spaces and indentions(which can be a little bit tricky when you&#8217;ve lost track of the indentions).
+</p>
+
+
+<h2>
+Example: IF/Else Statement in Javascript
+</h2>
+
+
+<pre><code>    if(5&gt;2){
+    console.log("Yes");
+    }else{
+    console.log("No");
+    }
+</code></pre>
+
+<h2>
+IF/Else Statement in Python
+</h2>
+
+
+<pre><code>    if 5 &gt; 2:
+        print "Yes"
+    else:
+        print "No"
+</code></pre>
+
+<p>
+The output of both the if/else statements is the same. We can see that in Python, we didn&#8217;t have to use open and close parentheses, curly braces and semi colons. However, it is more confusing than Javascript because if we&#8217;ve made a mistake on our indentions or spaces even just one white space or one tab space your program will end up having an error message. Now, I will show you how to declare variables on Python and Javascript. 
+</p>
+
+
+<h2>
+Example: Declaring Variables in JavaScript
+</h2>
+
+
+<pre><code>    var a = 5;
+    var b =10;
+    var c = a*b;
+</code></pre>
+
+<h2>
+Declaring Variables in Python
+</h2>
+
+
+<pre><code>    a = 5
+    b = 10
+    c = a*b
+</code></pre>
+
+<p>
+As you can see, Python doesn&#8217;t require you to put var when declaring variables while on JavaScript in order to declare a variable you need to specify that you&#8217;re declaring a variable by following this method: <strong>var variable_name = value</strong>. They can both also get input/s from the user without needing a form in html. We can do this by using the prompt for JavaScript and raw_input for Python.
+</p>
+
+
+
+
+<h2>
+Example: Getting input/s from user using JavaScript
+</h2>
+
+
+<pre><code>var a = prompt("What is your age?");
+</code></pre>
+
+<h2>
+Getting input/s from user using Python
+</h2>
+
+
+<pre><code>a = raw_input("What is your age?")
+</code></pre>
+
+<p></body></p>
+
+<p>
+That&#8217;s how you get input/s from a user using JavaScript and Python. Now, I&#8217;ll show you how to create functions using JavaScript and Python.
+</p>
+
+
+
+
+<h2>
+Example: Defining functions in Javascript:
+</h2>
+
+
+<pre><code>function Boinx(args1,args2){
+    return args1*args2
+});
+</code></pre>
+
+<h2>
+Defining functions in Python:
+</h2>
+
+
+<pre><code>def Boinx(args1,args2):
+    return args1*args2
+</code></pre>
+
+<p>
+That&#8217;s all for today. I just shared to you the basics in JavaScript and Python. It will take a lot of time if I&#8217;ll discuss everything I&#8217;ve learned from studying the two languages. I&#8217;ll study more languages and update this blog as soon as I&#8217;m finished.
+</p>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First Blog]]></title>
+    <link href="http://boinx25.github.io/blog/2013/12/17/first-blog/"/>
+    <updated>2013-12-17T14:15:48+08:00</updated>
+    <id>http://boinx25.github.io/blog/2013/12/17/first-blog</id>
+    <content type="html"><![CDATA[<p><body></p>
+
+<h1>Leap of Faith</h1>
+
+
+<p>Hi, I am Tony Bantug but you can call me &#8220;Boinx&#8221;. I am currently a 4th year college student taking up BSIT at College of the Immaculate Conception. I am having my Intership at a company called &#8220;Favorite Medium&#8221;. By the time this opportunity was offered to us, I had second thoughts on grabbing it because I thought that this was not my field, doing websites because I am not artistic enough and creative enough. But then my eagerness to learn more and my willingness to get out of my comfort zone pushed me to grab this rare opportunity. So I took it. I have no regrets since then, I&#8217;ve learned a lot that I didn&#8217;t learn from school. Learned and currently learning new Programming Languages. I&#8217;ll do my best to contribute to this company and not to waste this wonderful opportunity given to me. </p>
+
+
+<p></body></p>
+]]></content>
+  </entry>
+  
+</feed>
