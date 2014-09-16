@@ -1,8 +1,0 @@
----
-layout: post
-title: "Drupal"
-date: 2014-02-07 10:23:26 +0800
-comments: true
-categories: 
----
-<p>I'm currently learning how to edit and customize a drupal theme. I'll post screenshots of my first drupal theme as soon as I finish it.</p>
