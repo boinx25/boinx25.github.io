@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2014-09-16T09:09:13+08:00</updated>
+  <updated>2014-11-26T11:12:55+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Drupal Modules]]></title>
+    <link href="http://boinx25.github.io/blog/2014/11/26/drupal-modules/"/>
+    <updated>2014-11-26T10:46:40+08:00</updated>
+    <id>http://boinx25.github.io/blog/2014/11/26/drupal-modules</id>
+    <content type="html"><![CDATA[<p>I&#8217;m gonna share some useful Drupal modules that you may find useful on some projects.</p>
+
+
+
+
+<ul>
+    <li><a href="https://www.drupal.org/project/protected_node">Protected Node</a> - allows you to have password protection for different kind of nodes. A user can only access the node if he/she has the password but the author can access it without using a password.</li>
+    <li><a href="https://www.drupal.org/project/content_approval">Content Approval</a>- most likely to be used on forums and some file sharing sites. This allows the moderators or admin to approve first the shared file or content by a user. It saves the node but it doesn&#8217;t publish it to the site.</li>
+    <li><a href="https://www.drupal.org/project/views">Views</a>- this is a useful tool to control the contents of your website. This allows you to put different contents on a block and assign it to a region.</li>
+    <li><a href="https://www.drupal.org/project/views_field_view">Views Field view</a>- This allows you to embed a view as field on other views. So this allows you to put a view/s inside a view.</li>
+    <li><a href="https://www.drupal.org/project/save_draft">Save Draft</a>- adds a &#8220;Save as Draft&#8221; button for the CMS of all content types. This feature is not present on Drupal interface yet so it&#8217;s a great module to use.</li>
+    <li><a href="https://www.drupal.org/project/afb">Advanced Form Block</a> - this allows you to expose an &#8220;Add&#8221; or &#8220;Edit&#8221; block for different content types. You can use this if you want your user to add contents without using the admin panel.</li>
+    <li><a href="https://www.drupal.org/project/nodelazyloader">Node Lazyloader</a>- This makes all the nodes present on the page to lazyload so that your site can load faster.</li>
+    <li><a href="https://www.drupal.org/project/rate">Rate</a>- This module allows you to have a rating widget on different content types. It can be Thumbs Up, Thumbs up/down, fivestar, emotions and etc. This is useful if you want the user to rate the contents of your site.</li>
+</ul>
+
+
+
+
+<p>That&#8217;s it for now. Will update this blog once again when I find something useful. Thanks!</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Chrome Extension]]></title>
