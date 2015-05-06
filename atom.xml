@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2014-11-26T11:12:55+08:00</updated>
+  <updated>2015-05-06T17:25:41+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,126 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mandrill]]></title>
+    <link href="http://boinx25.github.io/blog/2015/05/06/mandrill/"/>
+    <updated>2015-05-06T10:54:33+08:00</updated>
+    <id>http://boinx25.github.io/blog/2015/05/06/mandrill</id>
+    <content type="html"><![CDATA[<p><a href="https://www.mandrill.com/" target="_blank">Mandrill</a> is an email service offered by MailChimp. It allows sending bulk emails and you can manage the flow of email sent via the Mandrill Dashboard.</p>
+
+
+
+
+<h2>Mandrill Home Page</h2>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillHome.png" width="700" height="700" title="Mandrill Home" alt="images"></p>
+
+<h2>Mandrill Dashboard</h2>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillDashboard.png" width="700" height="700" title="Mandrill Dashboard 1" alt="images">
+<img src="http://boinx25.github.io/images/MandrillDashboard2.png" width="700" height="700" title="Mandrill Dashboard 2" alt="images"></p>
+
+<p>So i&#8217;ve used this on a project that requires sending bulk emails to users who registered to the site, at first I&#8217;ve used the SMTP way but the problem is that sometimes when it reaches the daily quota of sending emails it will not send emails at all for the next 24 hours.</p>
+
+
+
+
+<h2>Mandrill Rates</h2>
+
+
+<p><img src="http://boinx25.github.io/images/RatesMandrill.png" width="700" height="700" title="Mandrill Rates" alt="images"></p>
+
+<p>I&#8217;ve registered for a free account so the monthly quota is 12k emails/month which is a decent amount of email but if you want more you can get a premium account and the rates are stated above.</p>
+
+
+
+
+<h2>Drupal Mandrill Module</h2>
+
+
+<p>I&#8217;ve used this on a Drupal site and there&#8217;s a drupal module that&#8217;s currently available for use. Here&#8217;s the <a href="https://www.drupal.org/project/mandrill" target="_blank">link</a> for it.(Current stable version is for Drupal 7)</p>
+
+
+<p>Requirements for this module to work:</p>
+
+
+<ul>
+<li><a href="https://bitbucket.org/mailchimp/mandrill-api-php/get/1.0.52.zip" target="_blank">Mandrill PHP Library</a></li>
+<li><a href="https://www.drupal.org/project/libraries" target="_blank">Libraries Module</a></li>
+<li><a href="https://www.drupal.org/project/mailsystem" target="_blank">Mailsystem Module</a></li>
+</ul>
+
+
+
+
+<p>Once you&#8217;ve follow the step on installing and enabling the module,you can now configure your mandrill app by going to modules and finding Mandrill then click on &#8216;Configure&#8217;.</p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillInstall.png" width="700" height="700" title="Mandrill Installation" alt="images"></p>
+
+<p>You&#8217;ll be redirected on the Mandrill page of your drupal site and it will now ask for an API Key.</p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillConfigure.png" width="700" height="700" title="Mandrill Configuration" alt="images"></p>
+
+<p>To get an API key, register an account on <a href="https://mandrill.com/" target="_blank">Mandrill.</a>Once registered, login and click on &#8216;Settings&#8217;. You will find there the &#8216;Create API Key&#8217; button. Click that to create a new API key, you can fill up the Description and check the checkboxes based on how you&#8217;ll use it but you can leave it all blank and unchecked.</p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillKey.png" width="700" height="700" title="Mandrill Key Button" alt="images">
+<img src="http://boinx25.github.io/images/MandrillKeyExpanded.png" width="700" height="700" title="Mandrill Key Button(expanded)" alt="images"></p>
+
+<p>Once you get the API key you can now paste it on the API key field on your Mandrill app page on your drupal site and continue configuring it.</p>
+
+
+
+
+<ul>
+<li>From address - will be the email address used to send the emails. You can use any email address.</li>
+<li>From name - you can optionally put here a name to be used as the sender of the email.</li>  
+<li>Input format - you can choose the format of your email. (Filtered HTML, Full HTML and Plain text)</li>
+</ul>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillEmailOptions.png" width="700" height="700" title="Mandrill Email Options" alt="images"></p>
+
+<p><img src="http://boinx25.github.io/images/MandrillSendOptions.png" width="700" height="700" title="Mandrill Send Options" alt="images"></p>
+
+<p><img src="http://boinx25.github.io/images/MandrillGA.png" width="700" height="700" title="Mandrill Google Analytics" alt="images"></p>
+
+<p>Once you&#8217;ve set up everything, you can test out if your Mandrill can now send emails. You can click on the &#8216;Send Email&#8217; tab on the tabs above.</p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillSendTab.png" width="700" height="700" title="Mandrill Send Tab" alt="images"></p>
+
+<p>Fill in the email address you want to receive an test email and you can edit the contents. Include attachment checkbox will Include a drupal icon attachment to the email when checked.</p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillSendEmail.png" width="700" height="700" title="Mandrill Send Email" alt="images"></p>
+
+<p>This is what the sent email looks like:</p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillSampleEmail.png" width="700" height="700" title="Mandrill Sample Email" alt="images"></p>
+
+<p>One last step is to set all the email functions to use the Mandrill App, go to Modules again and find &#8216;Mail System&#8217; then click &#8216;Configure&#8217;.</p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillMailSystem.png" width="700" height="700" title="Mandrill Mail System" alt="images"></p>
+
+<p></p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillMailSystemConfig.png" width="700" height="700" title="Mandrill Mail System config" alt="images"></p>
+
+<p>You just have to make sure that the &#8216;Site-wide default MailsystemInterface class&#8217; is set to MandrillMailSystem and you&#8217;re all good. All the outbound emails will now be sent through Mandrill. Congratulations! You&#8217;ve set up your Mandrill App on your Drupal site.</p>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Drupal Modules]]></title>
