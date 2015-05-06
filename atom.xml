@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2015-05-06T17:25:41+08:00</updated>
+  <updated>2015-05-06T17:34:24+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -130,6 +130,12 @@
 
 
 
+
+<p>You can keep track of your Mandrill App via the Mandrill Dashboard on your Drupal site. Go to reports > Mandrill.</p>
+
+
+<p><img src="http://boinx25.github.io/images/MandrillReports.png" width="700" height="700" title="Mandrill Reports" alt="images">
+<img src="http://boinx25.github.io/images/MandrillReports2.png" width="700" height="700" title="Mandrill Reports" alt="images"></p>
 ]]></content>
   </entry>
   
