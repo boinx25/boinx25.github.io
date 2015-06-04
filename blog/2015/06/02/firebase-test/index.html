@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Firebase Test - Boinx's Blog</title>
+  <meta name="author" content="Boinx Bantug">
+
+  
+  <meta name="description" content="So I&#8217;ve made a simple site which uses Firebase for data storage. It is a powerful platform because it allows you to save data and at the same &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://boinx25.github.io/blog/2015/06/02/firebase-test">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Boinx's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Boinx's Blog</a></h1>
+  
+    <h2>Stepping stone</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:boinx25.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Firebase Test</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-06-02T11:33:14+08:00" pubdate data-updated="true">Jun 2<span>nd</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>So I&#8217;ve made a simple site which uses <a href="https://www.firebase.com/">Firebase</a> for data storage. It is a powerful platform because it allows you to save data and at the same time output the data realtime on the site. You can also host your site using the Firebase hosting service. It also offers User Authentication service which enables user to login via email or most of the social media society uses nowadays. You can use firebase for free or you can also apply for a plan which gives you larger storage, more connections, custom domains and etc. You can sign up <a href="https://www.firebase.com/signup/">here</a>.</p>
+
+
+
+
+<p>In this example I only used Javascript in integrating Firebase on the site. For me this is the simplest way you can set up Firebase to your site. If you&#8217;re only making a small web app using only JS will be sufficient and less more complex.</p>
+
+
+
+
+<h2>Registering and creating your first Firebase app</h2>
+
+
+<p><img src="/images/FBDash.png" width="700" height="700" title="Firebase Dashboard" alt="images"></p>
+
+<p>To start, you must register an account first and create your first Firebase app on your Firebase dashboard. Click &#8220;Manage App&#8221; button to access the firebase app you&#8217;ve just created.</p>
+
+
+
+
+<h2>Managing your app</h2>
+
+
+<p><img src="/images/FBManage.png" width="900" height="900" title="Firebase Manage Dashboard" alt="images"></p>
+
+<p>Once you&#8217;ve clicked the &#8220;Manage App&#8221; button, you will be redirected on a new dashboard. As you can see on the left side there&#8217;s a menu bar, Data, Security and Rules, Simulator, Analytics, Login & Auth, Hosting and Secrets. I&#8217;m gonna explain each briefly.</p>
+
+
+
+
+<ul>
+<li>Data - this is where you will see the stored data. You can import data using JSON format and you can also export existing data from your firebase and it will generate a JSON file. You can also add and delete data to the firebase via this dashboard.</li>
+<br />
+<li>Security and Rules - you can set rules here for the users. The default rules implemented are the read and write set to true so that users can read and write data on the firebase app we made.</li>
+<br />
+<li>Simulator - you can try the authentication and read & write functionality of your firebase app. This is a useful feature when you&#8217;re setting up the login & authentication rules and rules of the firebase app you made.</li>
+<br />
+<li>Analytics - you can see here the total data stored, bandwidth for the last 24 hours and last 30 day and concurrent users. Updates ever 15-20 mins.</li>
+<br />
+<li>Login & Auth - you can set up the login & authentication of your site here. You can set login via email, facebook, twitter, google +, github or you can create your custom authentication.</li>
+<br />
+<li>Hosting - by default when you&#8217;re site is still not hosted via firebase this contains steps on setting up and deploying your site. Once deployed, this will be the directory for your static files(HTML,CSS,JS,etc.)</li>
+<br />
+<li>Secrets - used to generate tokens when crreating a custom authentication for your site. This will store all the tokens made.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<h2>Making the template of my simple site.</h2>
+
+
+<h3>Code</h3>
+
+
+<p><code></p>
+
+<p> <head></p>
+
+<pre><code>&lt;title&gt;Firebase Trial&lt;/title&gt;
+&lt;script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'&gt;&lt;/script&gt;
+&lt;script src="//code.jquery.com/jquery-1.11.3.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="main.js"&gt;&lt;/script&gt;
+
+&lt;style type="text/css"&gt;
+#submit{
+    padding: 20px;
+    background-color: gray;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#records{
+    margin-top: 20px;
+    width: 300px;
+    margin:0 auto;
+}
+
+tr{
+    text-align: center;
+}
+
+&lt;/style&gt;
+</code></pre>
+
+<p> </head></p>
+
+<p> <body></p>
+
+<pre><code>&lt;input type="text" class="inputs" id="name" placeholder="name" required&gt;
+&lt;br /&gt;
+&lt;input type="text" class="inputs" id="address" placeholder="address" required&gt;
+&lt;br /&gt;
+&lt;input type="text" class="inputs" id="nickname" placeholder="nickname" required&gt;
+&lt;div id="submit"&gt;Submit&lt;/div&gt;
+
+&lt;table border="1" id="records"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Address&lt;/th&gt;
+        &lt;th&gt;Nickname&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<p> </body></p>
+
+<p></code></p>
+
+<h3>Output:</h3>
+
+
+<p><img src="/images/FBCodeOutput.png" width="900" height="900" title="Output" alt="images"></p>
+
+<p>This is the code of my template, the first code block is for the head part of my code. The most important script file to be included is the firebase.js because without it we won&#8217;t be able to integrate firebase to the site. jQuery is not compuslary since we can just use Javascript in integrating it.</p>
+
+
+
+
+<p>The second codeblock is for the body of my template, it contains three text boxes that will get the name,address and nickname of a user and a submit button to save the inputs of the user. I&#8217;ve also included a table but there&#8217;s no data yet just headers because that&#8217;s where I&#8217;ll populate the data later. As you can see on the output part, that&#8217;s what the template I made looks like when there&#8217;s no data.</p>
+
+
+
+
+<h3>Populating the table</h3>
+
+
+<p><img src="/images/FBPopulate.png" width="900" height="900" title="Populate" alt="images">
+<img src="/images/FBPopulated2.png" width="900" height="900" title="Populated" alt="images">
+<img src="/images/FBPopulated.png" width="900" height="900" title="Populated" alt="images"></p>
+
+<p>Once I clicked on &#8220;Submit&#8221; button the data will instantly be stored in firebase and firebase will now sync it on the site real time with no refresh needed on the site. As you can see on the 2nd pic, it created a child under glaring firebase named &#8220;users&#8221; and under it is the data I&#8217;ve encoded.</p>
+
+
+
+
+<h3>JS Code</h3>
+
+
+<p><code></p>
+
+<pre><code>$(document).ready(function(){
+
+//Integrating Firebase
+var fireBase = new Firebase("https://glaring-fire-7005.firebaseio.com");
+var fireBaseusers = fireBase.child("users");
+
+//Saving data
+$('#submit').click(function(){
+
+    var name = $('#name').val();
+    var address = $('#address').val();
+    var nickname = $('#nickname').val();
+
+    if(name == '' || address == '' || nickname == ''){
+        alert('Please fill up everything');
+        return;
+    }
+
+    fireBaseusers.push({
+        name:name,
+        address:address,
+        nickname:nickname
+    });
+
+    $('.inputs').val('');
+});
+
+//For real time changes.
+fireBaseusers.on("child_added", function(data) {
+    var records = data.val();
+    displayRecords(records.name,records.address,records.nickname);
+});
+
+function displayRecords(name,address,nickname){
+    $('#records').append('&lt;tr&gt;' + '&lt;td&gt;' + name + '&lt;/td&gt;' + '&lt;td&gt;' + address + '&lt;/td&gt;' + '&lt;td&gt;' + nickname + '&lt;/td&gt;' +'&lt;/tr&gt;');
+}
+});
+</code></pre>
+
+<p></code></p>
+
+<h3>Code explanation</h3>
+
+
+<p><code></p>
+
+<pre><code>var fireBase = new Firebase("https://glaring-fire-7005.firebaseio.com");
+</code></pre>
+
+<p></code></p>
+
+<p>First you should declare your Firebase by putting it on a variable so that you can use this variable anytime when making changes on your firebase app. It&#8217;s up to you what variable name you&#8217;ll use. For this sample site I&#8217;ve used &#8220;fireBase&#8221;.</p>
+
+
+<p><code></p>
+
+<pre><code>var fireBaseusers = fireBase.child("users");
+</code></pre>
+
+<p></code></p>
+
+<p>Here I created a child on my Firebase named &#8220;users&#8221;. This is the reason why on the 2nd pic on the Populating the table part the user I&#8217;ve entered is under &#8220;users&#8221;. I did this just to make the data organized. Notice that I used the &#8220;fireBase&#8221; variable which is my firebase then the .child function tells JS that I&#8217;m assigning this variable to a child named &#8220;users&#8221; under my Firebase.</p>
+
+
+<p><code></p>
+
+<pre><code>//Saving data
+$('#submit').click(function(){
+
+    var name = $('#name').val();
+    var address = $('#address').val();
+    var nickname = $('#nickname').val();
+
+    if(name == '' || address == '' || nickname == ''){
+        alert('Please fill up everything');
+        return;
+    }
+
+    fireBaseusers.push({
+        name:name,
+        address:address,
+        nickname:nickname
+    });
+
+    $('.inputs').val('');
+});
+</code></pre>
+
+<p></code></p>
+
+<p>I&#8217;ve created a &#8220;click&#8221; function for my submit button and created variables in which the data I input on the textboxes will be stored. The &#8220;.push&#8221; function is the on who initiate the pushing of data to the Firebase. It&#8217;s telling to push it on &#8220;fireBaseusers&#8221; which is the variable I&#8217;ve made earlier that&#8217;s referencing to the child &#8220;users&#8221; under my Firebase. Inside that function you should put the data that will be pushed. In this case I used:</p>
+
+
+<ul>
+<li>name:name</li>
+<li>address:address</li>
+<li>nickname:nickname</li>
+</ul>
+
+
+
+
+<p>On the left side it will be the variable name that will be saved on Firebase, it could be anything you want. The one on the right side after the &#8220;:&#8221; is the variable where I stored the data I&#8217;ve input.</p>
+
+
+<p><code></p>
+
+<pre><code>//For real time changes.
+    fireBaseusers.on("child_added", function(data) {
+        var records = data.val();
+        displayRecords(records.name,records.address,records.nickname);
+    });
+</code></pre>
+
+<p></code></p>
+
+<p>This part makes sure that Firebase will sync up on the frontend once a child has been added. There&#8217;s a parameter named &#8220;data&#8221; this is where Firebase stores what&#8217;s returned once there&#8217;s a child added. I stored the data returned in a variable named &#8220;records&#8221;. I call the function I&#8217;ve created named display records then pass the 3 parameters I needed which is records.name,records.address,records.nickname. The data returned is in the form of objects.</p>
+
+
+<p><code></p>
+
+<pre><code>function displayRecords(name,address,nickname){
+    $('#records').append('&lt;tr&gt;' + '&lt;td&gt;' + name + '&lt;/td&gt;' + '&lt;td&gt;' + address + '&lt;/td&gt;' + '&lt;td&gt;' + nickname + '&lt;/td&gt;' +'&lt;/tr&gt;');
+}
+</code></pre>
+
+<p></code></p>
+
+<p>This is the function I&#8217;ve mentioned earlier, it accepts 3 parameters. Then it appends data on the table I&#8217;ve created containing the returned name,address and nickname gathered on my firebase.</p>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Boinx Bantug</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-06-02T11:33:14+08:00" pubdate data-updated="true">Jun 2<span>nd</span>, 2015</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://boinx25.github.io/blog/2015/06/02/firebase-test/" data-via="" data-counturl="http://boinx25.github.io/blog/2015/06/02/firebase-test/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/05/06/mandrill/" title="Previous Post: Mandrill">&laquo; Mandrill</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/06/02/firebase-test/">Firebase Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/05/06/mandrill/">Mandrill</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/26/drupal-modules/">Drupal Modules</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/12/chrome-extension/">Chrome Extension</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/27/php/">PHP: Hypertext Processor</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Boinx Bantug -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
