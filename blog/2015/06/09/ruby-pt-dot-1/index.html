@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Ruby pt.1 - Boinx's Blog</title>
+  <meta name="author" content="Boinx Bantug">
+
+  
+  <meta name="description" content="So I recently took up Ruby course in Code Academy and I&#8217;ll share some of the basic codes of Ruby that I&#8217;ve already taken up on Code &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://boinx25.github.io/blog/2015/06/09/ruby-pt-dot-1">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Boinx's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Boinx's Blog</a></h1>
+  
+    <h2>Stepping stone</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:boinx25.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Ruby pt.1</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-06-09T12:27:29+08:00" pubdate data-updated="true">Jun 9<span>th</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>So I recently took up Ruby course in Code Academy and I&#8217;ll share some of the basic codes of Ruby that I&#8217;ve already taken up on Code Academy.</p>
+
+
+
+
+<h2>Declaring Variables for different Data Types</h2>
+
+
+<p><code></p>
+
+<pre><code>my_Name = "Boinx" #String
+my_Decision = True #Boolean
+my_age = 21 #Integer
+</code></pre>
+
+<p></code></p>
+
+<h2>Puts and Print</h2>
+
+
+<p><code></p>
+
+<pre><code> puts "Hi"
+ puts "Hello!"
+ print "Boinx"
+ print "Bantug"
+
+ #Output
+ Hi
+ Hello!
+ BoinxBantug
+</code></pre>
+
+<p></code></p>
+
+<p>When you use &#8220;puts&#8221;, it&#8217;ll automatically print the next item you&#8217;ll print on the next line unlike &#8220;print&#8221; which prints the next item on the same line.</p>
+
+
+
+
+<h2>Methods</h2>
+
+
+<p><code></p>
+
+<pre><code>"Boinx".length  #Will return the length of the string "Boinx"
+"Hello".reverse #Will return the reverse of the string "Hello" which is "olleH"
+"BOINX".downcase #Will make all the letters in lowercase.
+"boinx".upcase #Will make all the letters in uppercase.
+"boinx".capitalize #Will make the first letter in uppercase.
+</code></pre>
+
+<p></code></p>
+
+<h2>Commenting</h2>
+
+
+<p><code></p>
+
+<pre><code>#using "#" in comment will allow you to put a comment on one line or single line comments
+
+=begin
+ And this is how to make a multi line comment.
+ Start it with "=begin"
+ and close it with "=end"
+=end
+</code></pre>
+
+<p></code></p>
+
+<h2>Getting inputs from users</h2>
+
+
+<p><code></p>
+
+<pre><code>first_name = gets
+last_name = gets.chomp
+
+=begin
+"gets" is the method for getting user inputs. I used a variable here to store the users' input, the .chomp method is used
+to eliminate the extra blank line produced by Ruby when getting users' input.
+=end
+</code></pre>
+
+<p></code></p>
+
+<h2>Printing variables</h2>
+
+
+<p><code></p>
+
+<pre><code>first_name = "Boinx"
+
+print #{first_name}
+</code></pre>
+
+<p></code></p>
+
+<!-- more -->
+
+
+
+
+<h2>Conditional Statements</h2>
+
+
+<p><code></p>
+
+<pre><code>user_num = 0;
+happy = true
+
+#if,elsif,else
+if user_num &lt; 0
+    puts "Less than zero"
+elsif user_num &gt; 0
+    puts "Greater than zero"
+else
+    puts "Equal to zero"
+end
+
+#unless
+unless happy
+    puts "I'm sad!"
+else
+    puts "I'm happy!"
+end
+</code></pre>
+
+<p></code></p>
+
+<h2>Loops</h2>
+
+
+<p><code></p>
+
+<pre><code>counter = 1
+number = 20
+
+#While Loop
+while counter &lt; 11
+    puts counter
+    counter += 1
+end
+
+#Until Loop
+until counter == 10
+    puts counter
+    counter +=1
+end
+
+#For Loop
+for number in 1...15 #doesn't include 15 when printed
+    puts num
+end
+
+for number in 1..15 #includes 15 when printed
+    puts num
+end
+
+#Loop method
+loop do  #prints the number until number == 0
+    number -=1
+    print "#{number}"
+    break if number &lt;=0
+end
+
+loop do #prints the number until number == 0  but skips even numbers.
+    number -=1
+    next if i%2 == 0
+    print "#{number}"
+    break if number &lt;=0
+</code></pre>
+
+<p></code></p>
+
+<h2>Making an Array</h2>
+
+
+<p><code></p>
+
+<pre><code>boinxArray = [1,2,3,4,5]
+</code></pre>
+
+<p></code></p>
+
+<h2>Iterating on Array</h2>
+
+
+<p><code></p>
+
+<pre><code>boinxArray = [1,2,3,4,5]
+
+boinxArray.each do |a| #You can use any name on your item, here I've used "a"
+    #enter what you want to do here
+end
+</code></pre>
+
+<p></code></p>
+
+<h2>.times method</h2>
+
+
+<p><code></p>
+
+<pre><code>20.times{puts "Hello"}
+
+#This will print out 20 "Hello"
+</code></pre>
+
+<p></code></p>
+
+<p>That&#8217;s it for now will update my blog for part 2. Thanks!</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Boinx Bantug</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-06-09T12:27:29+08:00" pubdate data-updated="true">Jun 9<span>th</span>, 2015</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://boinx25.github.io/blog/2015/06/09/ruby-pt-dot-1/" data-via="" data-counturl="http://boinx25.github.io/blog/2015/06/09/ruby-pt-dot-1/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/06/02/firebase-test/" title="Previous Post: Firebase Test">&laquo; Firebase Test</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/06/09/ruby-pt-dot-1/">Ruby pt.1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/06/02/firebase-test/">Firebase Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/05/06/mandrill/">Mandrill</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/26/drupal-modules/">Drupal Modules</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/12/chrome-extension/">Chrome Extension</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Boinx Bantug -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

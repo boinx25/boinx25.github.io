@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2015-06-04T09:28:24+08:00</updated>
+  <updated>2015-06-10T13:20:49+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,227 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby pt.1]]></title>
+    <link href="http://boinx25.github.io/blog/2015/06/09/ruby-pt-dot-1/"/>
+    <updated>2015-06-09T12:27:29+08:00</updated>
+    <id>http://boinx25.github.io/blog/2015/06/09/ruby-pt-dot-1</id>
+    <content type="html"><![CDATA[<p>So I recently took up Ruby course in Code Academy and I&#8217;ll share some of the basic codes of Ruby that I&#8217;ve already taken up on Code Academy.</p>
+
+
+
+
+<h2>Declaring Variables for different Data Types</h2>
+
+
+<p><code></p>
+
+<pre><code>my_Name = "Boinx" #String
+my_Decision = True #Boolean
+my_age = 21 #Integer
+</code></pre>
+
+<p></code></p>
+
+<h2>Puts and Print</h2>
+
+
+<p><code></p>
+
+<pre><code> puts "Hi"
+ puts "Hello!"
+ print "Boinx"
+ print "Bantug"
+
+ #Output
+ Hi
+ Hello!
+ BoinxBantug
+</code></pre>
+
+<p></code></p>
+
+<p>When you use &#8220;puts&#8221;, it&#8217;ll automatically print the next item you&#8217;ll print on the next line unlike &#8220;print&#8221; which prints the next item on the same line.</p>
+
+
+
+
+<h2>Methods</h2>
+
+
+<p><code></p>
+
+<pre><code>"Boinx".length  #Will return the length of the string "Boinx"
+"Hello".reverse #Will return the reverse of the string "Hello" which is "olleH"
+"BOINX".downcase #Will make all the letters in lowercase.
+"boinx".upcase #Will make all the letters in uppercase.
+"boinx".capitalize #Will make the first letter in uppercase.
+</code></pre>
+
+<p></code></p>
+
+<h2>Commenting</h2>
+
+
+<p><code></p>
+
+<pre><code>#using "#" in comment will allow you to put a comment on one line or single line comments
+
+=begin
+ And this is how to make a multi line comment.
+ Start it with "=begin"
+ and close it with "=end"
+=end
+</code></pre>
+
+<p></code></p>
+
+<h2>Getting inputs from users</h2>
+
+
+<p><code></p>
+
+<pre><code>first_name = gets
+last_name = gets.chomp
+
+=begin
+"gets" is the method for getting user inputs. I used a variable here to store the users' input, the .chomp method is used
+to eliminate the extra blank line produced by Ruby when getting users' input.
+=end
+</code></pre>
+
+<p></code></p>
+
+<h2>Printing variables</h2>
+
+
+<p><code></p>
+
+<pre><code>first_name = "Boinx"
+
+print #{first_name}
+</code></pre>
+
+<p></code></p>
+
+<!-- more -->
+
+
+
+
+<h2>Conditional Statements</h2>
+
+
+<p><code></p>
+
+<pre><code>user_num = 0;
+happy = true
+
+#if,elsif,else
+if user_num &lt; 0
+    puts "Less than zero"
+elsif user_num &gt; 0
+    puts "Greater than zero"
+else
+    puts "Equal to zero"
+end
+
+#unless
+unless happy
+    puts "I'm sad!"
+else
+    puts "I'm happy!"
+end
+</code></pre>
+
+<p></code></p>
+
+<h2>Loops</h2>
+
+
+<p><code></p>
+
+<pre><code>counter = 1
+number = 20
+
+#While Loop
+while counter &lt; 11
+    puts counter
+    counter += 1
+end
+
+#Until Loop
+until counter == 10
+    puts counter
+    counter +=1
+end
+
+#For Loop
+for number in 1...15 #doesn't include 15 when printed
+    puts num
+end
+
+for number in 1..15 #includes 15 when printed
+    puts num
+end
+
+#Loop method
+loop do  #prints the number until number == 0
+    number -=1
+    print "#{number}"
+    break if number &lt;=0
+end
+
+loop do #prints the number until number == 0  but skips even numbers.
+    number -=1
+    next if i%2 == 0
+    print "#{number}"
+    break if number &lt;=0
+</code></pre>
+
+<p></code></p>
+
+<h2>Making an Array</h2>
+
+
+<p><code></p>
+
+<pre><code>boinxArray = [1,2,3,4,5]
+</code></pre>
+
+<p></code></p>
+
+<h2>Iterating on Array</h2>
+
+
+<p><code></p>
+
+<pre><code>boinxArray = [1,2,3,4,5]
+
+boinxArray.each do |a| #You can use any name on your item, here I've used "a"
+    #enter what you want to do here
+end
+</code></pre>
+
+<p></code></p>
+
+<h2>.times method</h2>
+
+
+<p><code></p>
+
+<pre><code>20.times{puts "Hello"}
+
+#This will print out 20 "Hello"
+</code></pre>
+
+<p></code></p>
+
+<p>That&#8217;s it for now will update my blog for part 2. Thanks!</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Firebase Test]]></title>
