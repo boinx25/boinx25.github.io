@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2015-06-10T13:20:49+08:00</updated>
+  <updated>2015-06-11T13:10:29+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Slick Slider]]></title>
+    <link href="http://boinx25.github.io/blog/2015/06/11/slick-slider/"/>
+    <updated>2015-06-11T08:41:02+08:00</updated>
+    <id>http://boinx25.github.io/blog/2015/06/11/slick-slider</id>
+    <content type="html"><![CDATA[<p><a href="http://kenwheeler.github.io/slick/">Slick</a> by <a href="http://kenwheeler.github.io/">Kenwheeler</a> is a powerful plugin for creating responsive slider/carousel with different functions. jQuery is required for this plugin to work.I&rsquo;m gonna put some demos of commonly used features on sliders/carousels.</a></p>
+
+<h2>Demos</h2>
+
+
+<ul>
+<li>Single Item</li>
+<iframe width="100%" height="300" src="http://boinx25.github.io//jsfiddle.net/wfhwsfus/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<li>Autoplay</li>
+<iframe width="100%" height="300" src="http://boinx25.github.io//jsfiddle.net/3f5v1yzy/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<li>Multiple Items</li>
+<iframe width="100%" height="300" src="http://boinx25.github.io//jsfiddle.net/3m1ohqcv/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<li>Lazy Loading</li>
+<iframe width="100%" height="300" src="http://boinx25.github.io//jsfiddle.net/o3kcLzav/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<li>Fade</li>
+<iframe width="100%" height="300" src="http://boinx25.github.io//jsfiddle.net/8eyy26u9/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<li>Adaptive Height</li>
+<iframe width="100%" height="300" src="http://boinx25.github.io//jsfiddle.net/cbj3q8uo/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<li>Responsive Display</li>
+<iframe width="100%" height="300" src="http://boinx25.github.io//jsfiddle.net/z5mffLfa/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+</ul>
+
+
+
+
+<p> You can download the resources to be able to use this plugin <a href="https://github.com/kenwheeler/slick/archive/1.5.0.zip">here</a> and for further explanation on how to use this plugin click <a href="http://kenwheeler.github.io/slick/">here.</a></p>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby pt.1]]></title>
