@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2015-06-11T13:10:29+08:00</updated>
+  <updated>2016-01-08T02:35:18+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,198 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ghost]]></title>
+    <link href="http://boinx25.github.io/blog/2016/01/05/ghost/"/>
+    <updated>2016-01-05T22:11:45+08:00</updated>
+    <id>http://boinx25.github.io/blog/2016/01/05/ghost</id>
+    <content type="html"><![CDATA[<p><a href="https://ghost.org/">Ghost</a> is an open source blogging platform. What makes it different to other blogging/cms platforms is that it uses Node.js not PHP. It uses <a href="http://handlebarsjs.com/">Handlebar.js</a> for the templates. Ghost is limited only for content creation, there&rsquo;s no other functionalities available. You can use it as your journal,blog,etc. You can add members by inviting them to your team and you can assign them different roles.</p>
+
+<p>Pros</p>
+
+
+<ul>
+    <li>Open Source</li>
+    <li>Friendly UI</li>
+    <li>Fast response/loading time</li>
+    <li>Easy templating system</li>
+    <li>Lots of themes available</li>
+</ul>
+
+
+
+
+<p>Cons</p>
+
+
+<ul>
+    <li>Just a &#8220;BLOGGING&#8221; platform.</li>
+    <li>No plugins available to add functionalities.</li>
+</ul>
+
+
+
+
+<h1>Setting up Ghost</h1>
+
+
+<p>*Make sure that you have Node.js installed on your Machine since Ghost requires it.</p>
+
+
+<p>&#8220;Ghost needs Node version ~0.10.0 || ~0.12.0 || ~4.2.0&#8221;</p>
+
+
+
+
+<ol>
+    <li>Download Ghost <a href="https://ghost.org/download/">here.</a></li>
+    <li>Navigate to the folder where you want to install Ghost and unzip it there.</li>
+    <li>Open up your terminal and navigate to the folder where you unzipped Ghost.</li>
+    <li>Type in &#8220;npm install &#8211;production&#8221;. This will install Ghost.</li>
+    <li>After installing Ghost, type in &#8220;npm start&#8221;. This will run Node.js and your Ghost site is now accessible at &#8220;localhost:2368&#8221;.</li>
+</ol>
+
+
+
+
+<h1>Accessing Admin Panel</h1>
+
+
+
+
+<p>Go to &#8220;localhost:2368/ghost&#8221; to access the admin panel. You will be required to input the credentials for your account. When Ghost is newly installed, you will then be redirected to a form in where you&#8217;ll create your admin account and fill up some details about your site. After that, your site is ready.</p>
+
+
+
+
+<h1>Admin Dashboard</h1>
+
+
+
+
+<h2>Creating New Post</h2>
+
+
+<p><img src="http://boinx25.github.io/images/Newpost.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<h2>Post Options (You can go here by clicking the &#8220;Gear&#8221; icon beside the Save Draft button. Refer to the image above)</h2>
+
+
+<p><img src="http://boinx25.github.io/images/ContentMenu.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>In here you can:</p>
+
+
+<ul>
+    <li>Upload a Photo for the post.</li>
+    <li>Customize the url of the post. By default, the title becomes the url.</li>
+    <li>Set the Publish Date.</li>
+    <li>Add tags.</li>
+    <li>Assign Author.</li>
+    <li>Add Meta for SEO.</li>
+    <li>Make the post a static page.</li>
+    <li>Make the post featured.</li>
+</ul>
+
+
+
+
+<h2>Publishing Post</h2>
+
+
+<p><img src="http://boinx25.github.io/images/SaveDraftPublish.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>You can Save it as a Draft or Publish it right away.</p>
+
+
+
+
+<h2>Contents</h2>
+
+
+<p><img src="http://boinx25.github.io/images/Contents.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<h2>Team</h2>
+
+
+<p><img src="http://boinx25.github.io/images/Team.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>Here you can invite people to become a team member. You can assign different roles to them.</p>
+
+
+
+
+<h2>General Settings</h2>
+
+
+<p><img src="http://boinx25.github.io/images/GeneralSettings.png" width="700" height="700" title="Dashboard" alt="images">
+<img src="http://boinx25.github.io/images/GeneralSettings2.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>Here you can manage the following:</p>
+
+
+<ul>
+    <li>Blog Title</li>
+    <li>Blog Description</li>
+    <li>Blog Logo</li>
+    <li>Blog Image Cover</li>
+    <li>Posts per page</li>
+    <li>Date in your permalinks</li>
+    <li>Themes</li>
+    <li>Making the Blog private.</li>
+</ul>
+
+
+
+
+<h2>Navigation</h2>
+
+
+<p><img src="http://boinx25.github.io/images/NavigationLatest.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>Here&#8217;s where you manage the navigation menu of your site.</p>
+
+
+
+
+<h2>Tags</h2>
+
+
+<p><img src="http://boinx25.github.io/images/Tags.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>This is the place where you can manage your tags.</p>
+
+
+
+
+<h2>Code Injections</h2>
+
+
+<p><img src="http://boinx25.github.io/images/CodeInjection.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>You can inject codes to your sites header and footer by using this. Best used if you need to add Google Analytics or any scripts that needed to be injected to your site.</p>
+
+
+
+
+<h2>Labs</h2>
+
+
+<p><img src="http://boinx25.github.io/images/Labs.png" width="700" height="700" title="Dashboard" alt="images">
+<img src="http://boinx25.github.io/images/Labs2.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>Different experimental features for Ghost.</p>
+
+
+
+
+<p>So that&#8217;s all for the introduction of Ghost. <a href="http://support.ghost.org/user-guide/">Here&#8217;s</a> a handy Ghost user guide for you!</p>
+
+
+<p></ul></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Slick Slider]]></title>

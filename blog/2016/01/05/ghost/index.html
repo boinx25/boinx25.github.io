@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Ghost - Boinx's Blog</title>
+  <meta name="author" content="Boinx Bantug">
+
+  
+  <meta name="description" content="Ghost is an open source blogging platform. What makes it different to other blogging/cms platforms is that it uses Node.js not PHP. It uses Handlebar &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://boinx25.github.io/blog/2016/01/05/ghost">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Boinx's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Boinx's Blog</a></h1>
+  
+    <h2>Stepping stone</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:boinx25.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Ghost</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-05T22:11:45+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="https://ghost.org/">Ghost</a> is an open source blogging platform. What makes it different to other blogging/cms platforms is that it uses Node.js not PHP. It uses <a href="http://handlebarsjs.com/">Handlebar.js</a> for the templates. Ghost is limited only for content creation, there&rsquo;s no other functionalities available. You can use it as your journal,blog,etc. You can add members by inviting them to your team and you can assign them different roles.</p>
+
+<p>Pros</p>
+
+
+<ul>
+    <li>Open Source</li>
+    <li>Friendly UI</li>
+    <li>Fast response/loading time</li>
+    <li>Easy templating system</li>
+    <li>Lots of themes available</li>
+</ul>
+
+
+
+
+<p>Cons</p>
+
+
+<ul>
+    <li>Just a &#8220;BLOGGING&#8221; platform.</li>
+    <li>No plugins available to add functionalities.</li>
+</ul>
+
+
+
+
+<h1>Setting up Ghost</h1>
+
+
+<p>*Make sure that you have Node.js installed on your Machine since Ghost requires it.</p>
+
+
+<p>&#8220;Ghost needs Node version ~0.10.0 || ~0.12.0 || ~4.2.0&#8221;</p>
+
+
+
+
+<ol>
+    <li>Download Ghost <a href="https://ghost.org/download/">here.</a></li>
+    <li>Navigate to the folder where you want to install Ghost and unzip it there.</li>
+    <li>Open up your terminal and navigate to the folder where you unzipped Ghost.</li>
+    <li>Type in &#8220;npm install &#8211;production&#8221;. This will install Ghost.</li>
+    <li>After installing Ghost, type in &#8220;npm start&#8221;. This will run Node.js and your Ghost site is now accessible at &#8220;localhost:2368&#8221;.</li>
+</ol>
+
+
+
+
+<h1>Accessing Admin Panel</h1>
+
+
+
+
+<p>Go to &#8220;localhost:2368/ghost&#8221; to access the admin panel. You will be required to input the credentials for your account. When Ghost is newly installed, you will then be redirected to a form in where you&#8217;ll create your admin account and fill up some details about your site. After that, your site is ready.</p>
+
+
+
+
+<h1>Admin Dashboard</h1>
+
+
+
+
+<h2>Creating New Post</h2>
+
+
+<p><img src="/images/Newpost.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<h2>Post Options (You can go here by clicking the &#8220;Gear&#8221; icon beside the Save Draft button. Refer to the image above)</h2>
+
+
+<p><img src="/images/ContentMenu.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>In here you can:</p>
+
+
+<ul>
+    <li>Upload a Photo for the post.</li>
+    <li>Customize the url of the post. By default, the title becomes the url.</li>
+    <li>Set the Publish Date.</li>
+    <li>Add tags.</li>
+    <li>Assign Author.</li>
+    <li>Add Meta for SEO.</li>
+    <li>Make the post a static page.</li>
+    <li>Make the post featured.</li>
+</ul>
+
+
+
+
+<h2>Publishing Post</h2>
+
+
+<p><img src="/images/SaveDraftPublish.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>You can Save it as a Draft or Publish it right away.</p>
+
+
+
+
+<h2>Contents</h2>
+
+
+<p><img src="/images/Contents.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<h2>Team</h2>
+
+
+<p><img src="/images/Team.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>Here you can invite people to become a team member. You can assign different roles to them.</p>
+
+
+
+
+<h2>General Settings</h2>
+
+
+<p><img src="/images/GeneralSettings.png" width="700" height="700" title="Dashboard" alt="images">
+<img src="/images/GeneralSettings2.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>Here you can manage the following:</p>
+
+
+<ul>
+    <li>Blog Title</li>
+    <li>Blog Description</li>
+    <li>Blog Logo</li>
+    <li>Blog Image Cover</li>
+    <li>Posts per page</li>
+    <li>Date in your permalinks</li>
+    <li>Themes</li>
+    <li>Making the Blog private.</li>
+</ul>
+
+
+
+
+<h2>Navigation</h2>
+
+
+<p><img src="/images/NavigationLatest.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>Here&#8217;s where you manage the navigation menu of your site.</p>
+
+
+
+
+<h2>Tags</h2>
+
+
+<p><img src="/images/Tags.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>This is the place where you can manage your tags.</p>
+
+
+
+
+<h2>Code Injections</h2>
+
+
+<p><img src="/images/CodeInjection.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>You can inject codes to your sites header and footer by using this. Best used if you need to add Google Analytics or any scripts that needed to be injected to your site.</p>
+
+
+
+
+<h2>Labs</h2>
+
+
+<p><img src="/images/Labs.png" width="700" height="700" title="Dashboard" alt="images">
+<img src="/images/Labs2.png" width="700" height="700" title="Dashboard" alt="images"></p>
+
+<p>Different experimental features for Ghost.</p>
+
+
+
+
+<p>So that&#8217;s all for the introduction of Ghost. <a href="http://support.ghost.org/user-guide/">Here&#8217;s</a> a handy Ghost user guide for you!</p>
+
+
+<p></ul></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Boinx Bantug</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-05T22:11:45+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2016</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://boinx25.github.io/blog/2016/01/05/ghost/" data-via="" data-counturl="http://boinx25.github.io/blog/2016/01/05/ghost/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/06/11/slick-slider/" title="Previous Post: Slick Slider">&laquo; Slick Slider</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/01/05/ghost/">Ghost</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/06/11/slick-slider/">Slick Slider</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/06/09/ruby-pt-dot-1/">Ruby pt.1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/06/02/firebase-test/">Firebase Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/05/06/mandrill/">Mandrill</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Boinx Bantug -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
