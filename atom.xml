@@ -4,7 +4,7 @@
   <title><![CDATA[Boinx's Blog]]></title>
   <link href="http://boinx25.github.io/atom.xml" rel="self"/>
   <link href="http://boinx25.github.io/"/>
-  <updated>2016-01-08T02:35:18+08:00</updated>
+  <updated>2016-01-08T03:30:20+08:00</updated>
   <id>http://boinx25.github.io/</id>
   <author>
     <name><![CDATA[Boinx Bantug]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Creating a Ghost Custom Theme]]></title>
+    <link href="http://boinx25.github.io/blog/2016/01/08/creating-ghost-custom-theme/"/>
+    <updated>2016-01-08T02:40:52+08:00</updated>
+    <id>http://boinx25.github.io/blog/2016/01/08/creating-ghost-custom-theme</id>
+    <content type="html"><![CDATA[<p>To create your own custom theme for Ghost, navigate to your Ghost folder. Under content/themes create your theme folder.</p>
+
+
+
+
+<h2>Basic Structure of a Ghost theme</h2>
+
+
+<p><img src="http://boinx25.github.io/images/FullThemeStructure.png" width="700" height="700" title="Theme Directory" alt="images"></p>
+
+<ul>
+<ol>
+    <li>Assets - this will contain all the resources you&#8217;ll be using for your site.</li>
+    <li>Partials - contains different template files that can be included to your main template files. Examples are Header and Footer.</li>
+</ol>
+</ul>
+
+
+
+
+<h2>Required files for your custom theme:</h2>
+
+
+<h3>default.hbs</h3>
+
+
+<p><img src="http://boinx25.github.io/images/defaulthbs.png" width="700" height="700" title="default template" alt="images"></p>
+
+<p>This template file contains the html tag, head tag and body tag. This is where you link up external scripts and stylesheets.</p>
+
+
+<h3>index.hbs</h3>
+
+
+<p><img src="http://boinx25.github.io/images/indexhbs.png" width="700" height="700" title="index.hbs" alt="images"></p>
+
+<p>This is the template file for your homepage.</p>
+
+
+<h3>package.json</h3>
+
+
+<p><img src="http://boinx25.github.io/images/themename.png" width="700" height="700" title="package.json" alt="images"></p>
+
+<p>This is where you set the name and the version of your theme that will appear when selecting a theme in the admin dashboard.</p>
+
+
+<h3>posts.hbs</h3>
+
+
+<p><img src="http://boinx25.github.io/images/posthbs.png" width="700" height="700" title="posts.hbs" alt="images"></p>
+
+<p>This is the template that will be used by all your posts.</p>
+
+
+
+
+<h2>My Basic Custom theme</h2>
+
+
+<h3>Homepage</h3>
+
+
+<p><img src="http://boinx25.github.io/images/SampleGhost.png" width="700" height="700" title="Sample 1" alt="images"></p>
+
+<h3>Post</h3>
+
+
+<p><img src="http://boinx25.github.io/images/SampleGhost2.png" width="700" height="700" title="Sample 2" alt="images"></p>
+
+<p><a href="https://themes.ghost.org/docs/about">Here&#8217;s</a> a link for an overview on how the Ghost theme works and showing what are the available handlebar expressions and helpers for your theme.</p>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ghost]]></title>

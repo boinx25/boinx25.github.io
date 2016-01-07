@@ -9,7 +9,7 @@
   <meta name="author" content="Boinx Bantug">
 
   
-  <meta name="description" content="Ghost is an open source blogging platform. What makes it different to other blogging/cms platforms is that it uses Node.js not PHP. It uses Handlebar &hellip;">
+  <meta name="description" content="To create your own custom theme for Ghost, navigate to your Ghost folder. Under content/themes create your theme folder. Basic Structure of a Ghost &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,115 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/08/creating-ghost-custom-theme/">Creating a Ghost Custom Theme</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-08T02:40:52+08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>To create your own custom theme for Ghost, navigate to your Ghost folder. Under content/themes create your theme folder.</p>
+
+
+
+
+<h2>Basic Structure of a Ghost theme</h2>
+
+
+<p><img src="/images/FullThemeStructure.png" width="700" height="700" title="Theme Directory" alt="images"></p>
+
+<ul>
+<ol>
+    <li>Assets - this will contain all the resources you&#8217;ll be using for your site.</li>
+    <li>Partials - contains different template files that can be included to your main template files. Examples are Header and Footer.</li>
+</ol>
+</ul>
+
+
+
+
+<h2>Required files for your custom theme:</h2>
+
+
+<h3>default.hbs</h3>
+
+
+<p><img src="/images/defaulthbs.png" width="700" height="700" title="default template" alt="images"></p>
+
+<p>This template file contains the html tag, head tag and body tag. This is where you link up external scripts and stylesheets.</p>
+
+
+<h3>index.hbs</h3>
+
+
+<p><img src="/images/indexhbs.png" width="700" height="700" title="index.hbs" alt="images"></p>
+
+<p>This is the template file for your homepage.</p>
+
+
+<h3>package.json</h3>
+
+
+<p><img src="/images/themename.png" width="700" height="700" title="package.json" alt="images"></p>
+
+<p>This is where you set the name and the version of your theme that will appear when selecting a theme in the admin dashboard.</p>
+
+
+<h3>posts.hbs</h3>
+
+
+<p><img src="/images/posthbs.png" width="700" height="700" title="posts.hbs" alt="images"></p>
+
+<p>This is the template that will be used by all your posts.</p>
+
+
+
+
+<h2>My Basic Custom theme</h2>
+
+
+<h3>Homepage</h3>
+
+
+<p><img src="/images/SampleGhost.png" width="700" height="700" title="Sample 1" alt="images"></p>
+
+<h3>Post</h3>
+
+
+<p><img src="/images/SampleGhost2.png" width="700" height="700" title="Sample 2" alt="images"></p>
+
+<p><a href="https://themes.ghost.org/docs/about">Here&#8217;s</a> a link for an overview on how the Ghost theme works and showing what are the available handlebar expressions and helpers for your theme.</p>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1043,118 +1152,6 @@ echo $name;
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/01/15/new-things/">New Things!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-15T09:12:30+08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><body></p>
-
-<h1>Compass and SASS</h1>
-
-
-<p>Recently, I learned how to use Compass and SASS. It is a great help for all the web developers out there. It gives them ease on doing or editing the CSS of their projects. It allows you to create mixins, makes it easy creating sprites, generates your CSS file fast, allows you to import css file to another css file so you&#8217;ll just have to link 1 CSS file to your project. For a beginner like me, yes it benefits me a lot.</p>
-
-
-
-
-<p>Compass is an open source application that uses SASS(Syntactically Awesome Style Sheets). SASS is an extension of CSS3 that allows you to nest rules, add variables, create mixins and etc. It is also the one who generates your CSS.</p>
-
-
-
-
-<p>Examples of SASS Commands:</p>
-
-
-<h2>Nested Rules</h2>
-
-
-<pre><code>#content{
-    background-color:black;
-
-    .box{
-        background-color:black;
-    }   
-
-}
-</code></pre>
-
-<p> When compiled to CSS, it will look like this:</p>
-
-
-<pre><code>#content{
-background-color:black;
-}
-#content .box{
-background-color:black;
-}
-</code></pre>
-
-<h2>Variables</h2>
-
-
-<pre><code>$black = #00000;
-$w = white; 
-</code></pre>
-
-<p><p>Now you can use these variables anywhere on your project just don&rsquo;t forget to import it to the CSS file where you need to use it. You can simply type, <strong>@import &lsquo;name of the scss file&rsquo;;</strong>. You can use the variables like this:</p>
-
-<pre><code>background-color:$black;
-color:$w;
-</code></pre>
-
-<p><h2>Mixins</h2></p>
-
-<pre><code>@mixin myFont{
-font:{
-    family:Arial;
-    size:15px;
-    weight:bold;
-}
-}
-</code></pre>
-
-<p><p>You can use it by using the <strong>@include</strong> method.</p></p>
-
-<pre><code>#pageHead{
-width:500px;
-text-align:center;
-@include myFont;
-}
-</code></pre>
-
-<p><p>That&rsquo;s all for now. I&rsquo;ll update this blog again as soon as I learned something new! Thanks for reading! :)</p>
-</body></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1170,6 +1167,10 @@ text-align:center;
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2016/01/08/creating-ghost-custom-theme/">Creating a Ghost Custom Theme</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2016/01/05/ghost/">Ghost</a>
       </li>
     
@@ -1183,10 +1184,6 @@ text-align:center;
     
       <li class="post">
         <a href="/blog/2015/06/02/firebase-test/">Firebase Test</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/05/06/mandrill/">Mandrill</a>
       </li>
     
   </ul>
